@@ -1,5 +1,7 @@
 # [Meetup Connect](http://meetupconnect.com) #
 
+[![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)](https://github.com/Section214/Meetup-Connect/blob/master/license.txt)
+
 ### Welcome to our GitHub Repository
 
 Meetup Connect is a powerful, flexible platform for integrating with [meetup.com](http://meetup.com). It aims to provide full feature integration in a simple, easy to use package allowing you to seamlessly integrate Meetup with your WordPress site.
