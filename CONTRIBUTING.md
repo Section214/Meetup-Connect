@@ -1,5 +1,9 @@
 # Contribute to Meetup Connect #
 
+Community made patches, localizations, bug reports and contributions are always welcome!
+
+When contributing, please ensure you follow the guidelines below to help us stay sane!
+
 __Please Note:__ GitHub is for bug reports and contributions only!
 
 ## Getting Started ##
