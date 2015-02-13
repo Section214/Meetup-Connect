@@ -1,0 +1,119 @@
+/* Fix color picker label alignment
+-------------------------------------------------------------- */
+.meetup-connect-color-picker-label {
+    vertical-align: top;
+}
+
+
+/* Info styles
+-------------------------------------------------------------- */
+.meetup-connect-info {
+    min-height: 20px;
+    padding: 8px 19px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+}
+
+.meetup-connect-info-notice {
+    margin: 5px 0 15px;
+    background-color: #ffffff;
+    border: 0;
+    -webkit-box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    padding: 1px 12px;
+}
+
+.meetup-connect-info-notice p {
+    margin: .5em 0;
+    padding: 2px;
+}
+
+.meetup-connect-info-desc {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.meetup-connect-info .meetup-connect-info-icon,
+.meetup-connect-info-notice .meetup-connect-info-icon {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.meetup-connect-info-icon i {
+    font-size: 2em;
+}
+
+.meetup-connect-info-desc {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.meetup-connect-info.meetup-connect-info-normal {
+    background-color: #eeeeee;
+    border-color: #cccccc;
+    color: #666666;
+}
+
+.meetup-connect-info.meetup-connect-info-normal i {
+    color: #c5c5c5;
+}
+
+.meetup-connect-info.meetup-connect-info-warning {
+    background-color: #fbeba4;
+    border-color: #d7c281;
+    color: #958234;
+}
+
+.meetup-connect-info.meetup-connect-info-warning i {
+    color: #dcca81;
+}
+
+.meetup-connect-info.meetup-connect-info-success {
+    background-color: #c4ee91;
+    border-color: #71af5d;
+    color: #4d7615;
+}
+
+.meetup-connect-info.meetup-connect-info-success i {
+    color: #a0ca6c;
+}
+
+.meetup-connect-info.meetup-connect-info-critical {
+    background-color: #fba1a3;
+    border-color: #b84f5b;
+    color: #981225;
+}
+
+.meetup-connect-info.meetup-connect-info-critical i {
+    color: #dd767d;
+}
+
+.meetup-connect-info-notice.meetup-connect-info-normal {
+    border-left: 4px solid #0099d5;
+}
+
+.meetup-connect-info-notice.meetup-connect-info-success {
+    border-left: 4px solid #7ad03a;
+}
+
+.meetup-connect-info-notice.meetup-connect-info-warning {
+    border-left: 4px solid #fbeba4;
+}
+
+.meetup-connect-info-notice.meetup-connect-info-critical {
+    border-left: 4px solid #dd3d36;
+}
+
+
+/* About page styles
+-------------------------------------------------------------- */
+.meetup-connect-about-wrapper {
+    max-width: 500px;
+    text-align: justify;
+}
+
+.meetup-connect-about-wrapper p {
+    margin-bottom: 20px !important;
+}
