@@ -18,6 +18,6 @@ class Test_Settings extends WP_UnitTestCase {
     public function test_get_registered_settings() {
         $settings = meetup_connect_get_registered_settings();
 
-        $this->assertArrayHasKey( 'auth_type', $settings['settings'] );
+        $this->assertArrayHasKey( 'auth_type', $settings['settings'][0] );
     }
 }
