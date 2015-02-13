@@ -1,6 +1,6 @@
 # [Meetup Connect](http://meetupconnect.com) #
 
-[![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)](https://github.com/Section214/Meetup-Connect/blob/master/license.txt)
+[![Travis](https://img.shields.io/travis/Section214/Meetup-Connect.svg)](https://travis-ci.org/Section214/Meetup-Connect) [![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)](https://github.com/Section214/Meetup-Connect/blob/master/license.txt)
 
 ### Welcome to our GitHub Repository
 
