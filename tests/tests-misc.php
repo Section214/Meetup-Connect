@@ -12,7 +12,7 @@ class Test_Misc extends WP_UnitTestCase {
     }
 
     public function test_sample() {
-        $foo = 'bar';
+        $foo = 'bars';
         $this->assertEquals( 'bar', $foo );
     }
 }
