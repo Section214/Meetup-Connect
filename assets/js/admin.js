@@ -66,4 +66,20 @@ jQuery(document).ready(function ($) {
         var file_frame;
         window.formfield = '';
     }
+
+    $("select[name='meetup_connect_settings[auth_type]']").change(function () {
+        var selectedItem = $("select[name='meetup_connect_settings[auth_type]'] option:selected");
+
+        if (selectedItem.val() === 'oauth') {
+            $("div[name='meetup_connect_settings[auth_info]']").closest('tr').css('display', 'none');
+            $("input[name='meetup_connect_settings[api_key]']").closest('tr').css('display', 'none');
+            $("input[name='meetup_connect_settings[oauth_key]']").closest('tr').css('display', 'table-row');
+            $("input[name='meetup_connect_settings[oauth_secret]']").closest('tr').css('display', 'table-row');
+        } else {
+            $("div[name='meetup_connect_settings[auth_info]']").closest('tr').css('display', 'table-row');
+            $("input[name='meetup_connect_settings[api_key]']").closest('tr').css('display', 'table-row');
+            $("input[name='meetup_connect_settings[oauth_key]']").closest('tr').css('display', 'none');
+            $("input[name='meetup_connect_settings[oauth_secret]']").closest('tr').css('display', 'none');
+        }
+    }).change();
 });
