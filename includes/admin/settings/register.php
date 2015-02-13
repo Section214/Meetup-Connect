@@ -39,11 +39,48 @@ function meetup_connect_get_registered_settings() {
         // Settings
         'settings' => apply_filters( 'meetup_connect_settings', array(
             array(
-                'id'        => 'general_header',
-                'name'      => __( 'General Settings', 'meetup-connect' ),
+                'id'        => 'auth_header',
+                'name'      => __( 'Authentication Settings', 'meetup-connect' ),
                 'desc'      => '',
                 'type'      => 'header'
             ),
+            array(
+                'id'        => 'auth_info',
+                'name'      => '',
+                'desc'      => __( 'While we support both traditional API keys and OAuth, we highly recommend OAuth. Some functionality (such as user login and RSVPs) requires OAuth access.', 'meetup-connect' ),
+                'type'      => 'info',
+                'header'    => __( 'Notice', 'meetup-connect' ),
+                'style'     => 'warning',
+                'icon'      => 'info-circle'
+            ),
+            array(
+                'id'        => 'auth_type',
+                'name'      => __( 'Authentication Type', 'meetup-connect' ),
+                'desc'      => __( 'Select the authentication type to use.', 'meetup-connect' ),
+                'type'      => 'select',
+                'options'   => array(
+                    'key'       => __( 'API Key', 'meetup-connect' ),
+                    'oauth'     => __( 'OAuth', 'meetup-connect' )
+                )
+            ),
+            array(
+                'id'        => 'api_key',
+                'name'      => __( 'API Key', 'meetup-connect' ),
+                'desc'      => sprintf( __( 'You can find your Meetup API key <a href="%s" target="_blank">here</a>.', 'meetup-connect' ), 'https://secure.meetup.com/meetup_api/key' ),
+                'type'      => 'text'
+            ),
+            array(
+                'id'        => 'oauth_key',
+                'name'      => __( 'OAuth Key', 'meetup-connect' ),
+                'desc'      => sprintf( __( 'You can find (or create) your OAuth key <a href="%s" target="_blank">here</a>.', 'meetup-connect' ), 'https://secure.meetup.com/meetup_api/oauth_consumers' ),
+                'type'      => 'text'
+            ),
+            array(
+                'id'        => 'oauth_secret',
+                'name'      => __( 'OAuth Secret', 'meetup-connect' ),
+                'desc'      => sprintf( __( 'You can find (or create) your OAuth secret <a href="%s" target="_blank">here</a>.', 'meetup-connect' ), 'https://secure.meetup.com/meetup_api/oauth_consumers' ),
+                'type'      => 'text'
+            )
         ) ),
         'about' => apply_filters( 'meetup_connect_settings_about', array(
             array(
@@ -339,7 +376,7 @@ function meetup_connect_info_callback( $args ) {
         $header = '<b>' . $args['header'] . '</b><br />';
     }
 
-    echo '<div class="meetup-connect-info' . $notice . ' meetup-connect-info-' . $style . '">';
+    echo '<div id="meetup_connect_settings[' . $args['id'] . ']" name="meetup_connect_settings[' . $args['id'] . ']" class="meetup-connect-info' . $notice . ' meetup-connect-info-' . $style . '">';
 
     if( isset( $args['icon'] ) ) {
         echo '<p class="meetup-connect-info-icon">';
