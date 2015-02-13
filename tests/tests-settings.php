@@ -28,4 +28,14 @@ class Test_Settings extends WP_UnitTestCase {
         $this->assertFalse( meetup_connect_get_option( 'fake_opt', false ) );
         $this->assertEquals( 'option', meetup_connect_get_option( 'my_opt', false ) );
     }
+
+    public function test_get_settings() {
+        $this->assertEmpty( meetup_connect_get_settings() );
+    }
+
+    public function test_sanitize_text_field() {
+        $input = 'Test string ';
+
+        $this->assertEquals( 'Test string', meetup_connect_sanitize_text_field( $input ) );
+    }
 }
