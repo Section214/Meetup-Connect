@@ -25,7 +25,7 @@ This is a developer's portal for Meetup Connect and should _not_ be used for sup
 
 ## Contributions ##
 
-If you have been given access to this repo, it is most likely because you have expressed interest in contributing already, or have been hired by Section214. Please read the [guidelines for contributing](https://github.com/Section214/Meetup-Connect/blog/master/CONTRIBUTING.md) to this repository.
+Anyone is welcome to contribute to Meetup Connect. Please read the [guidelines for contributing](https://github.com/Section214/Meetup-Connect/blog/master/CONTRIBUTING.md) to this repository.
 
 There are various ways you can contribute:
 
